@@ -1,0 +1,891 @@
+@import "animate";
+
+/// @access public
+@mixin animations-base(){
+  .animated {
+    @include animated();
+    &.hinge {
+      @include animation-duration(2s);
+    }
+    &.infinite{
+      @include animation-iteration(infinite);
+    }
+  }
+}
+
+
+
+
+/// slide keyframe animations---------------------------------------------------------------
+
+/// @access public
+@mixin slideIn(){
+  @include animate-slideIn();
+  .slideIn {
+    @include animation(slideIn);
+    @content;
+  }
+}
+
+/// @access public
+@mixin slideOut(){
+  @include animate-slideOut();
+  .slideOut {
+    @include animation(slideOut);
+    @content;
+  }
+}
+
+/// @access public
+@mixin slideInDown(){
+  @include animate-slideInDown();
+  .slideInDown {
+   @include animation(slideInDown);
+    @content;
+  }
+}
+
+/// @access public
+@mixin slideInDownBig(){
+  @include animate-slideInDownBig();
+  .slideInDownBig {
+   @include animation(slideInDownBig);
+    @content;
+  }
+}
+
+@mixin slideInUp(){
+  @include animate-slideInUp();
+  .slideInUp {
+    @include animation(slideInUp);
+    @content;
+  }
+}
+
+/// @access public
+@mixin slideInUpBig(){
+  @include animate-slideInUpBig();
+  .slideInUpBig {
+    @include animation(slideInUpBig);
+    @content;
+  }
+}
+
+/// @access public
+@mixin slideInLeft(){
+  @include animate-slideInLeft();
+  .slideInLeft {
+    @include animation(slideInLeft);
+    @content;
+  }
+}
+
+/// @access public
+@mixin slideInLeftBig(){
+  @include animate-slideInLeftBig();
+  .slideInLeftBig {
+    @include animation(slideInLeftBig);
+    @content;
+  }
+}
+
+/// @access public
+@mixin slideInRight(){
+  @include animate-slideInRight();
+  .slideInRight {
+    @include animation(slideInRight);
+    @content;
+  }
+}
+
+/// @access public
+@mixin slideInRightBig(){
+  @include animate-slideInRightBig();
+  .slideInRightBig {
+    @include animation(slideInRightBig);
+    @content;
+  }
+}
+
+/// @access public
+@mixin slideOutUp(){
+  @include animate-slideOutUp();
+  .slideOutUp {
+    @include animation(slideOutUp);
+    @content;
+  }
+}
+
+/// @access public
+@mixin slideOutUpBig(){
+  @include animate-slideOutUpBig();
+  .slideOutUpBig {
+    @include animation(slideOutUpBig);
+    @content;
+  }
+}
+
+/// @access public
+@mixin slideOutDown(){
+  @include animate-slideOutDown();
+  .slideOutDown {
+    @include animation(slideOutDown);
+    @content;
+  }
+}
+
+/// @access public
+@mixin slideOutDownBig(){
+  @include animate-slideOutDownBig();
+  .slideOutDownBig {
+    @include animation(slideOutDownBig);
+    @content;
+  }
+}
+
+/// @access public
+@mixin slideOutLeft(){
+  @include animate-slideOutLeft();
+  .slideOutLeft {
+    @include animation(slideOutLeft);
+    @content;
+  }
+}
+
+/// @access public
+@mixin slideOutLeftBig(){
+  @include animate-slideOutLeftBig();
+  .slideOutLeftBig {
+    @include animation(slideOutLeftBig);
+    @content;
+  }
+}
+
+/// @access public
+@mixin slideOutRight(){
+  @include animate-slideOutRight();
+  .slideOutRight {
+    @include animation(slideOutRight);
+    @content;
+  }
+}
+
+/// @access public
+@mixin slideOutRightBig(){
+  @include animate-slideOutRightBig();
+  .slideOuRightBigt {
+    @include animation(slideOutRightBig);
+    @content;
+  }
+}
+
+/// all slide keyframe animations
+/// @access public
+@mixin animations-slide(){
+  @include slideIn();
+  @include slideOut();
+  @include slideInDown();
+  @include slideInDownBig();
+  @include slideInUp();
+  @include slideInUpBig();
+  @include slideInLeft();
+  @include slideInLeftBig();
+  @include slideInRight();
+  @include slideInRightBig();
+  @include slideOutDown();
+  @include slideOutDownBig();
+  @include slideOutUp();
+  @include slideOutUpBig();
+  @include slideOutLeft();
+  @include slideOutLeftBig();
+  @include slideOutRight();
+  @include slideOutRightBig();
+  @content;
+}
+
+
+
+/// fade keyframe animations----------------------------------------------------------------
+
+/// @access public
+@mixin fadeIn(){
+  @include animate-fadeIn();
+  .fadeIn {
+    @include animation(fadeIn);
+    @content;
+  }
+}
+
+/// @access public
+@mixin fadeInLeft(){
+  @include animate-fadeInLeft();
+  .fadeInLeft {
+    @include animation(fadeInLeft);
+    @content;
+  }
+}
+
+/// @access public
+@mixin fadeInRight(){
+  @include animate-fadeInRight();
+  .fadeInRight {
+    @include animation(fadeInRight);
+    @content;
+  }
+}
+
+/// @access public
+@mixin fadeInUp(){
+  @include animate-fadeInUp();
+  .fadeInUp {
+    @include animation(fadeInUp);
+    @content;
+  }
+}
+
+/// @access public
+@mixin fadeInDown(){
+  @include animate-fadeInDown();
+  .fadeInDown {
+    @include animation(fadeInDown);
+    @content;
+  }
+}
+
+/// @access public
+@mixin fadeInLeftBig(){
+  @include animate-fadeInLeftBig();
+  .fadeInLeftBig {
+    @include animation(fadeInLeftBig);
+    @content;
+  }
+}
+
+/// @access public
+@mixin fadeInRightBig(){
+  @include animate-fadeInRightBig();
+  .fadeInRightBig {
+    @include animation(fadeInRightBig);
+    @content;
+  }
+}
+
+/// @access public
+@mixin fadeInUpBig(){
+  @include animate-fadeInUpBig();
+  .fadeInUpBig {
+    @include animation(fadeInUpBig);
+    @content;
+  }
+}
+
+/// @access public
+@mixin fadeInDownBig(){
+  @include animate-fadeInDownBig();
+  .fadeInDownBig {
+    @include animation(fadeInDownBig);
+    @content;
+  }
+}
+
+
+/// @access public
+@mixin fadeOut(){
+  @include animate-fadeOut();
+  .fadeOut {
+    @include animation(fadeOut);
+    @content;
+  }
+}
+
+/// @access public
+@mixin fadeOutUp(){
+  @include animate-fadeOutUp();
+  .fadeOutUp {
+    @include animation(fadeOutUp);
+    @content;
+  }
+}
+
+/// @access public
+@mixin fadeOutDown(){
+  @include animate-fadeOutDown();
+  .fadeOutDown {
+    @include animation(fadeOutDown);
+    @content;
+  }
+}
+
+/// @access public
+@mixin fadeOutLeft(){
+  @include animate-fadeOutLeft();
+  .fadeOutLeft {
+    @include animation(fadeOutLeft);
+    @content;
+  }
+}
+
+/// @access public
+@mixin fadeOutRight(){
+  @include animate-fadeOutRight();
+  .fadeOutRight {
+    @include animation(fadeOutRight);
+    @content;
+  }
+}
+
+/// @access public
+@mixin fadeOutUpBig(){
+  @include animate-fadeOutUpBig();
+  .fadeOutUpBig {
+    @include animation(fadeOutUpBig);
+    @content;
+  }
+}
+
+/// @access public
+@mixin fadeOutDownBig(){
+  @include animate-fadeOutDownBig();
+  .fadeOutDownBig {
+    @include animation(fadeOutDownBig);
+    @content;
+  }
+}
+
+/// @access public
+@mixin fadeOutLeftBig(){
+  @include animate-fadeOutLeftBig();
+  .fadeOutLeftBig {
+    @include animation(fadeOutLeftBig);
+    @content;
+  }
+}
+
+/// @access public
+@mixin fadeOutRightBig(){
+  @include animate-fadeOutRightBig();
+  .fadeOutRightBig {
+    @include animation(fadeOutRightBig);
+    @content;
+  }
+}
+
+/// all fade keyframe animations
+/// @access public
+@mixin animations-fade(){
+  @include fadeIn();
+  @include fadeInUp();
+  @include fadeInDown();
+  @include fadeInLeft();
+  @include fadeInRight();
+  @include fadeInUpBig();
+  @include fadeInDownBig();
+  @include fadeInLeftBig();
+  @include fadeInRightBig();
+  @include fadeOut();
+  @include fadeOutUp();
+  @include fadeOutDown();
+  @include fadeOutLeft();
+  @include fadeOutRight();
+  @include fadeOutUpBig();
+  @include fadeOutDownBig();
+  @include fadeOutLeftBig();
+  @include fadeOutRightBig();
+  @content;
+}
+
+
+
+/// bounce keyframe animations ------------------------------------------------------------------------
+
+/// @access public
+@mixin bounceIn(){
+  @include animate-bounceIn();
+  .bounceIn {
+    @include animation(bounceIn);
+    @content;
+  }
+}
+
+/// @access public
+@mixin bounceInUp(){
+  @include animate-bounceInUp();
+  .bounceInUp {
+    @include animation(bounceInUp);
+    @content;
+  }
+}
+
+/// @access public
+@mixin bounceInDown(){
+  @include animate-bounceInDown();
+  .bounceInDown {
+    @include animation(bounceInDown);
+    @content;
+  }
+}
+
+/// @access public
+@mixin bounceInLeft(){
+  @include animate-bounceInLeft();
+  .bounceInLeft {
+    @include animation(bounceInLeft);
+    @content;
+  }
+}
+
+/// @access public
+@mixin bounceInRight(){
+  @include animate-bounceInRight();
+  .bounceInRight {
+    @include animation(bounceInRight);
+    @content;
+  }
+}
+
+/// @access public
+@mixin bounceOut(){
+  @include animate-bounceOut();
+  .bounceOut {
+    @include animation(bounceOut);
+    @content;
+  }
+}
+
+/// @access public
+@mixin bounceOutUp(){
+  @include animate-bounceOutUp();
+  .bounceOutUp {
+    @include animation(bounceOutUp);
+    @content;
+  }
+}
+
+/// @access public
+@mixin bounceOutDown(){
+  @include animate-bounceOutDown();
+  .bounceOutDown {
+    @include animation(bounceOutDown);
+    @content;
+  }
+}
+
+/// @access public
+@mixin bounceOutLeft(){
+  @include animate-bounceOutLeft();
+  .bounceOutLeft {
+    @include animation(bounceOutLeft);
+    @content;
+  }
+}
+
+/// @access public
+@mixin bounceOutRight(){
+  @include animate-bounceOutRight();
+  .bounceOutRight {
+    @include animation(bounceOutRight);
+    @content;
+  }
+}
+
+
+/// all bounce keyframe animations
+/// @access public
+@mixin animations-bounce(){
+  @include bounceIn();
+  @include bounceInUp();
+  @include bounceInDown();
+  @include bounceInLeft();
+  @include bounceInRight();
+  @include bounceOut();
+  @include bounceOutUp();
+  @include bounceOutDown();
+  @include bounceOutLeft();
+  @include bounceOutRight();
+  @content;
+}
+
+
+
+
+/// rotate keyframe animations ----------------------------------------------------------------------------
+
+/// @access public
+@mixin rotateIn(){
+  @include animate-rotateIn();
+  .rotateIn {
+    @include animation(rotateIn);
+    @content;
+  }
+}
+
+/// @access public
+@mixin rotateInUpLeft(){
+  @include animate-rotateInUpLeft();
+  .rotateInUpLeft {
+    @include animation(rotateInUpLeft);
+    @content;
+  }
+}
+
+@mixin rotateInDownLeft(){
+  @include animate-rotateInDownLeft();
+  .rotateInDownLeft {
+    @include animation(rotateInDownLeft);
+    @content;
+  }
+}
+
+/// @access public
+@mixin rotateInUpRight(){
+  @include animate-rotateInUpRight();
+  .rotateInUpRight {
+    @include animation(rotateInUpRight);
+    @content;
+  }
+}
+
+/// @access public
+@mixin rotateInDownRight(){
+  @include animate-rotateIn();
+  .rotateInDownRight {
+    @include animation(rotateInDownRight);
+    @content;
+  }
+}
+
+
+/// @access public
+@mixin rotateOut(){
+  @include animate-rotateOut();
+  .rotateOut {
+    @include animation(rotateOut);
+    @content;
+  }
+}
+
+/// @access public
+@mixin rotateOutUpLeft(){
+  @include animate-rotateOutUpLeft();
+  .rotateOutUpLeft {
+    @include animation(rotateOutUpLeft);
+    @content;
+  }
+}
+
+/// @access public
+@mixin rotateOutDownLeft(){
+  @include animate-rotateOutDownLeft();
+  .rotateOutDownLeft {
+    @include animation(rotateOutDownLeft);
+    @content;
+  }
+}
+
+/// @access public
+@mixin rotateOutUpRight(){
+  @include animate-rotateOutUpRight();
+  .rotateOutUpRight {
+    @include animation(rotateOutUpRight);
+    @content;
+  }
+}
+
+/// @access public
+@mixin rotateOutDownRight(){
+  @include animate-rotateOut();
+  .rotateOutDownRight {
+    @include animation(rotateOutDownRight);
+    @content;
+  }
+}
+
+
+/// all rotate keyframe animations
+/// @access public
+@mixin animations-rotate(){
+  @include rotateIn();
+  @include rotateInUpLeft();
+  @include rotateInDownLeft();
+  @include rotateInUpRight();
+  @include rotateInDownRight();
+  @include rotateOut();
+  @include rotateOutUpLeft();
+  @include rotateOutDownLeft();
+  @include rotateOutUpRight();
+  @include rotateOutDownRight();
+  @content;
+}
+
+
+
+
+/// flip keyframe animations ------------------------------------------------------------------------
+
+/// @access public
+@mixin flipInX(){
+  @include animate-flipInX();
+  .flipInX {
+    @include animation-backface-visibility();
+    @include animation(flipInX);
+    @content;
+  }
+}
+
+/// @access public
+@mixin flipOutX(){
+  @include animate-flipOutX();
+  .flipOutX {
+    @include animation-backface-visibility();
+    @include animation(flipOutX);
+    @content;
+  }
+}
+
+/// @access public
+@mixin flipInY(){
+  @include animate-flipInY();
+  .flipInY {
+    @include animation-backface-visibility();
+    @include animation(flipInY);
+    @content;
+  }
+}
+
+/// @access public
+@mixin flipOutY(){
+  @include animate-flipOutY();
+  .flipOutY {
+    @include animation-backface-visibility();
+    @include animation(flipOutY);
+    @content;
+  }
+}
+
+/// all flip keyframe animations
+/// @access public
+@mixin animations-flip(){
+  @include flipInX();
+  @include flipOutX();
+  @include flipInY();
+  @include flipOutY();
+  @content;
+}
+
+
+
+
+/// roll keyframe animations -----------------------------------------------------------------------------
+
+/// @access public
+@mixin rollIn(){
+  @include animate-rollIn();
+  .rollIn {
+    @include animation(rollIn);
+    @content;
+  }
+}
+
+/// @access public
+@mixin rollOut(){
+  @include animate-rollOut();
+  .rollOut {
+    @include animation(rollOut);
+    @content;
+  }
+}
+
+/// all roll keyframe animations
+/// @access public
+@mixin animations-roll(){
+  @include rollIn();
+  @include rollOut();
+  @content;
+}
+
+
+
+/// lightspeed keyframe animations -----------------------------------------------------------------------
+
+/// @access public
+@mixin lightSpeedIn(){
+  @include animate-lightSpeedIn();
+  .lightSpeedIn {
+    @include animation(lightSpeedIn);
+    @include animation-timing-function(ease-out);
+    @include animation-duration(500ms);
+    @content;
+  }
+}
+
+/// @access public
+@mixin lightSpeedOut(){
+  @include animate-lightSpeedOut();
+  .lightSpeedOut {
+    @include animation(lightSpeedOut);
+    @include animation-timing-function(ease-in);
+    @include animation-duration(250ms);
+    @content;
+  }
+}
+
+/// all light-speed keyframe animations
+/// @access public
+@mixin animations-lightSpeed(){
+  @include lightSpeedIn();
+  @include lightSpeedOut();
+  @content;
+}
+
+
+
+/// attention -------------------------------------------------------------------------------------------
+
+/// @access public
+@mixin flash(){
+  @include animate-flash();
+  .flash {
+    @include animation(flash);
+    @content;
+  }
+}
+
+/// @access public
+@mixin shake(){
+  @include animate-shake();
+  .shake {
+    @include animation(shake);
+    @content;
+  }
+}
+
+/// @access public
+@mixin tada(){
+  @include animate-tada();
+  .tada {
+    @include animation(tada);
+    @content;
+  }
+}
+
+/// @access public
+@mixin swing(){
+  @include animate-swing();
+  .swing {
+    @include animation(swing);
+    @content;
+  }
+}
+
+/// @access public
+@mixin wobble(){
+  @include animate-wobble();
+  .wobble {
+    @include animation(wobble);
+    @content;
+  }
+}
+
+/// @access public
+@mixin wiggle(){
+  @include animate-wiggle();
+  .wiggle {
+    @include animation(wiggle);
+    @include animation-duration(750ms);
+    @content;
+  }
+}
+
+/// @access public
+@mixin pulse(){
+  @include animate-pulse();
+  .pulse {
+    @include animation(pulse);
+    @content;
+  }
+}
+
+
+/// @access public
+@mixin rubberband(){
+  @include animate-rubberband();
+  .rubberband {
+    @include animation(rubberband);
+    @include animation-duration(750ms);
+    @content;
+  }
+}
+
+
+/// @access public
+@mixin hinge(){
+  @include animate-hinge();
+  .hinge {
+    @include animation(hinge);
+    @content;
+  }
+}
+
+
+
+/// all attention keyframe animations
+/// @access public
+@mixin animations-attention(){
+  @include flash();
+  @include shake();
+  @include tada();
+  @include swing();
+  @include wobble();
+  @include wiggle();
+  @include pulse();
+  @include rubberband();
+  @include hinge();
+  @content;
+}
+
+
+/// all -----------------------------------------------------------
+
+//all keyframe animations in one mixin
+/// @access public
+@mixin animations-all(){
+  @include animations-slide();
+  @include animations-fade();
+  @include animations-bounce();
+  @include animations-rotate();
+  @include animations-flip();
+  @include animations-roll();
+  @include animations-lightSpeed();
+  @include animations-attention();
+  @content;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

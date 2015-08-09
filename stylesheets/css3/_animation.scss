@@ -1,0 +1,72 @@
+
+/// @access public
+/// @param {String} $name
+@mixin animation($name) {
+  -webkit-animation-name:$name;
+  animation-name:$name;
+}
+
+/// @access public
+/// @param {String} $duration (350ms)
+@mixin animation-duration($duration:350ms){
+  -webkit-animation-duration: $duration;
+  animation-duration: $duration;
+}
+
+/// @access public
+/// @param {String} $delay (0)
+@mixin animation-delay($delay:0){
+  -webkit-animation-delay:$delay;
+  animation-delay:$delay;
+}
+
+/// @access public
+/// @param {Number} $iteration (1)
+@mixin animation-iteration($iteration:1){
+  -webkit-animation-iteration-count:$iteration;
+  animation-iteration-count:$iteration;
+}
+
+/// @access public
+/// @param {Number} $duration (1)
+/// @param {Number} $delay (0)
+/// @param {Number} $iteration (1)
+@mixin animation-props($duration:1s,$delay:0,$iteration:1){
+  @include animation-duration($duration);
+  @include animation-delay($delay);
+  @include animation-iteration($iteration);
+}
+
+/// @access public
+@mixin animation-backface-visibility(){
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+}
+
+
+///@access public
+///@param {String} $easing (ease-in)
+@mixin animation-timing-function($easing:ease-in){
+  -webkit-animation-timing-function: $easing;
+  animation-timing-function:$easing;
+}
+
+/// @access public
+/// @param {Number} $duration (350ms)
+@mixin animated($duration:350ms) {
+  @include animation-duration($duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+/// @access public
+/// @param {String} $name
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}

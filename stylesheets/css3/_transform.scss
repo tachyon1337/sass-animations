@@ -1,0 +1,172 @@
+
+/// @access public
+/// @param {String} $x (0)
+/// @param {String} $y (0)
+@mixin translate($x:0,$y:0){
+  -webkit-transform: translate(#{$x},#{$y});
+  transform: translate(#{$x},#{$y});
+}
+
+/// @access public
+/// @param {String} $x
+@mixin translateX($x){
+  -webkit-transform: translateX(#{$x});
+  transform: translateX(#{$x});
+}
+
+/// @access public
+/// @param {String} $y
+@mixin translateY($y){
+  -webkit-transform: translateY(#{$y});
+  transform: translateY(#{$y});
+}
+
+/// @access public
+/// @param {String} $z
+@mixin translateZ($z){
+  -webkit-transform: translateZ(#{$z});
+  transform: translateZ(#{$z});
+}
+
+/// @access public
+/// @param {String} $x (0)
+/// @param {String} $y (0)
+/// @param {String} $z (0)
+@mixin translate3d($x:0,$y:0,$z:0){
+  -webkit-transform: translate3d(#{$x},#{$y},#{$z});
+  transform: translate3d(#{$x},#{$y},#{$z});
+}
+
+/// @access public
+/// @param {String} $x (0)
+/// @param {String} $y (0)
+@mixin scale($x:0,$y:0){
+  -webkit-transform: scale(#{$x},#{$y});
+  transform: scale(#{$x},#{$y});
+}
+
+/// @access public
+/// @param {String} $x
+@mixin scaleX($x){
+  -webkit-transform: scaleX(#{$x});
+  transform: scaleX(#{$x});
+}
+
+/// @access public
+/// @param {String} $y
+@mixin scaleY($y){
+  -webkit-transform: scaleY(#{$y});
+  transform: scaleY(#{$y});
+}
+
+/// @access public
+/// @param {String} $z
+@mixin scaleZ($z){
+  -webkit-transform: scaleZ(#{$z});
+  transform: scaleZ(#{$z});
+}
+
+/// @access public
+/// @param {String} $x (0)
+/// @param {String} $y (0)
+/// @param {String} $z (0)
+@mixin scale3d($x:0,$y:0,$z:0){
+  -webkit-transform: scale3d(#{$x},#{$y},#{$z});
+  transform: scale3d(#{$x},#{$y},#{$z});
+}
+
+/// @access public
+/// @param {String} $v
+@mixin rotate($v){
+  -webkit-transform: rotate(#{$v});
+  transform: rotate(#{$v});
+}
+
+@mixin rotateX($x){
+  -webkit-transform: rotateX(#{$x});
+  transform: rotateX(#{$x});
+}
+
+/// @access public
+/// @param {String} $y
+@mixin rotateY($y){
+  -webkit-transform: rotateY(#{$y});
+  transform: rotateY(#{$y});
+}
+
+/// @access public
+/// @param {String} $z
+@mixin rotateZ($z){
+  -webkit-transform: rotateZ(#{$z});
+  transform: rotateZ(#{$z});
+}
+
+/// @access public
+/// @param {String} $x (0)
+/// @param {String} $y (0)
+/// @param {String} $z (0)
+@mixin rotate3d($x:0,$y:0,$z:0){
+  -webkit-transform: rotate3d(#{$x},#{$y},#{$z});
+  transform: rotate3d(#{$x},#{$y},#{$z});
+}
+
+/// @access public
+/// @param {String} $x (0deg)
+/// @param {String} $y (0deg)
+@mixin skew($x:0deg,$y:0deg){
+  -webkit-transform: skew(#{$x},#{$y});
+  transform: skew(#{$x},#{$y});
+}
+
+/// @access public
+/// @param {String} $x
+@mixin skewX($x){
+  -webkit-transform: skewX(#{$x});
+  transform: skewX(#{$x});
+}
+
+/// @access public
+/// @param {String} $y
+@mixin skewY($y){
+  -webkit-transform: skewY(#{$y});
+  transform: skewY(#{$y});
+}
+
+/// @access public
+/// @param {String} $v
+@mixin perspective($v){
+  -webkit-transform: perspective(#{$v});
+  transform: perspective(#{$v});
+}
+
+/// @access public
+/// @param {String} $v
+@mixin transform($v){
+  -webkit-transform: #{$v};
+  transform: #{$v};
+}
+
+/// @access public
+/// @param {String} $v
+@mixin transform-origin($v){
+  -webkit-transform-origin: #{$v};
+  transform-origin: #{$v};
+}
+
+/// @access public
+/// @param {String} $v
+@mixin transform-style($v){
+  -webkit-transform-style: #{$v};
+  transform-style: #{$v};
+}
+
+/// @access public
+/// @param {String} $v
+@mixin backface-visibility($v){
+  -webkit-backface-visibility: #{$v};
+  backface-visibility: #{$v};
+}
+
+
+
+
