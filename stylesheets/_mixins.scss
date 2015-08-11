@@ -1,0 +1,25 @@
+
+/// @access public
+@mixin mixins-hardware-acceleration() {
+
+  %ui-hardware-accelerate {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  .ui-hardware-accelerated,.hardware-accelerated {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  .ui-backface-visibility,.backface-visibility {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .ui-perspective,.perspective {
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+  }
+
+}
